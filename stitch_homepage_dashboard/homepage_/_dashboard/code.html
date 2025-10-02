@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1193d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            "display": ["Inter", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-slate-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold">CareerConnect</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">My Network</a>
+<a class="text-sm font-medium text-primary" href="#">Jobs</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Messaging</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Notifications</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 dark:text-slate-400">search</span>
+<input class="form-input w-full min-w-40 max-w-64 resize-none rounded-lg border border-slate-300 dark:border-slate-700 bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 placeholder:text-slate-500 dark:placeholder:text-slate-400 pl-10 focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Search" value=""/>
+</label>
+<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRD6Rt7ze-E3Vz92ioyRexAkwsjVF8bhqeChaWHrCsKATcc1WsGL5PXQ3WiCOvU7HBS0d7FfQSw1V2fTDFs4JKDh1hw51otryK64iMEmFTZZ3ho47p2YSaru2GAXdpvOan0cOP4e9HilvqdEQZdClnh4a8QHONXQBPwPjwBzC90MlnV5DC8cAb7f1WfYjQnu0Ljj1IvoNhedXzo1VCBjPI9pN6PO3Lc4l9UTwMYmlt-D1GglQTDp5Up6chfU_uZ0Crx5hosDTEwjs");'></div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<aside class="lg:col-span-3 space-y-6">
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm p-6 flex flex-col items-center">
+<div class="size-32 rounded-full bg-cover bg-center mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3WKu-8bNAKrxZ-OdnwuOtCA5YYv6g-_TVc7vm91kGdX7E8umFtOaLuUHaARZamIRa4rCDZjP4nrGbYflzW8LZ41suJ0uKiMsgYXpljwj84VHuaGsTsA1pwn-d4eoorLeUEhUyPSe3n7SvII-MErA3I4bsFpBaI2iPvqHVf8_CXgj7FtU6CynB0LPQEiMNneusXDTaY_HUS4oSYxdI_g45jXAmd1Tzevh5zXXk9txkPVKWCNMMJplr37X_w0GkroLe6sB_qa-NJa0");'></div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Sophia Bennett</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 text-center">Software Engineer at Tech Innovators</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm p-4 text-center">
+<p class="text-2xl font-bold text-slate-900 dark:text-white">120</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Connections</p>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm p-4 text-center">
+<p class="text-2xl font-bold text-slate-900 dark:text-white">50</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Profile views</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm p-4">
+<div class="flex items-center gap-4">
+<div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div>
+<p class="font-semibold text-slate-800 dark:text-slate-200">Try Premium Free</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Access exclusive tools</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm p-4">
+<h4 class="text-md font-semibold text-slate-800 dark:text-slate-200 mb-4">My items</h4>
+<nav class="space-y-2">
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">work</span>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">My Jobs</span>
+</a>
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">group</span>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">My Network</span>
+</a>
+<a class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">school</span>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">My Learning</span>
+</a>
+</nav>
+</div>
+</aside>
+<div class="lg:col-span-9 space-y-8">
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm p-6">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Welcome, Sophia</h2>
+<div>
+<div class="flex justify-between items-center mb-1">
+<p class="text-sm font-medium text-slate-600 dark:text-slate-400">Profile strength</p>
+<p class="text-sm font-medium text-primary">Intermediate</p>
+</div>
+<div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Recommended Jobs</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden group">
+<div class="w-full h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgUK2fFBY_inudMJqwcUwYhMKYzVSVRousfUGZFELwjfREv0IeKu17L9HEefJRc5gRJvj9oAN6vgt2d6uasbMr36kLqIkipowukiOYsLrcDX18j-rrVS8uIykecuuJP-B1FKEVDPvYdTXMEr2cFozEcqjL51qSB92HIU7aPKtqQW24DJzKN3-BAiVho5MVAf3jGwH8q-D7LIVVC7KVHwNmWjrX2guwurksP18auyPBA3pGTK_4BJ-NLjHP2baWRtj2UNJ6UXbAaT8");'></div>
+<div class="p-4">
+<p class="font-semibold text-slate-800 dark:text-slate-200">Software Engineer</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Tech Innovators</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden group">
+<div class="w-full h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTX6orpxPH3JaQQOrvshnPUkyU1zw5aDVWMeHD7PNPSWvaL4Ox1aLuFX-M2LOqy65ejHw07LKBFA4vVJOH6HBwIBBreu8LiPtGvUcRiUo1cNlHrjpXhm-DVZLsssYVqjiVrb4ZMWrMeCtSq_hq2OLdCR4w0G-CPXftbpK1yy_lhV66CNNsIc5z1nu6oaIW3_8I4i-7lhJ4FQWxx_NQRhXIvhCfpJXz-AgUaDJpR1QxxQnE0xdRT_C3CCYKBCncSUObLhjSqSOy0xY");'></div>
+<div class="p-4">
+<p class="font-semibold text-slate-800 dark:text-slate-200">Product Manager</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Global Solutions Inc.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm overflow-hidden group">
+<div class="w-full h-40 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIaoCogBqULSf0wJY4d8_7dqsT_xD87xmasDukfDs1F8iOUopc5zxh3jR4ar-3tq42y7etifIXXEJOnH9H0qKQX8Pl2fKvaiALSnxpOfSpBTr6RijBbuPjAbggN_l8lRsdMYN1UhaxZgeGxn4RZ7tF3eKUoiy2PUL0M6cLqYlnopqQWLduBa9H013UiQmA4JcvAyFHGkU7JLQtLvR7vUJBliB_QWe8VjamuBOTJSgy_PcGiyWGA_0PTdHyorNsDMT8vxWOmkbmv1w");'></div>
+<div class="p-4">
+<p class="font-semibold text-slate-800 dark:text-slate-200">Data Analyst</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Data Insights Corp.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-lg shadow-sm">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white p-6 pb-4">My Alerts</h3>
+<ul class="divide-y divide-slate-200 dark:divide-slate-800">
+<li class="p-6 flex items-center gap-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div class="flex-grow">
+<p class="font-medium text-slate-800 dark:text-slate-200">New job alerts for Software Engineer</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Software Engineer at Tech Innovators</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500">chevron_right</span>
+</li>
+<li class="p-6 flex items-center gap-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div class="flex-grow">
+<p class="font-medium text-slate-800 dark:text-slate-200">New job alerts for Product Manager</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Product Manager at Global Solutions Inc.</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500">chevron_right</span>
+</li>
+<li class="p-6 flex items-center gap-4 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+<div class="size-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div class="flex-grow">
+<p class="font-medium text-slate-800 dark:text-slate-200">New job alerts for Data Analyst</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Data Analyst at Data Insights Corp.</p>
+</div>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500">chevron_right</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1193d4',
+              'background-light': '#f6f7f8',
+              'background-dark': '#101c22',
+            },
+            fontFamily: {
+              display: ['Inter'],
+            },
+            borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', full: '9999px' },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-b-black/10 dark:border-b-white/10 px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-black dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">CareerConnect</h2>
+</div>
+<div class="hidden items-center gap-9 lg:flex">
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white text-sm font-medium" href="#">Home</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white text-sm font-medium" href="#">My Network</a>
+<a class="text-black dark:text-white text-sm font-medium" href="#">Jobs</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white text-sm font-medium" href="#">Messaging</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white text-sm font-medium" href="#">Notifications</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<label class="hidden md:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded h-full">
+<div class="text-black/60 dark:text-white/60 flex border-none bg-black/5 dark:bg-white/5 items-center justify-center pl-3 rounded-l">
+<span class="material-symbols-outlined text-xl"> search </span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-black dark:text-white focus:outline-0 focus:ring-0 border-none bg-black/5 dark:bg-white/5 h-full placeholder:text-black/60 dark:placeholder:text-white/60 px-2 rounded-l-none border-l-0 text-base font-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="lg:hidden flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded bg-black/5 dark:bg-white/5 text-black dark:text-white">
+<span class="material-symbols-outlined text-2xl"> menu </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAShbcMlINtIO81UYKL6w2v6MbETzVZeIGrFBcJyr_zlGfXb3Ksevzq6NT9osCRyWwjdwDrQDQFjSghqlOuh_6VySG8lun6i7P4r04KZB66c25yj0FmXStPGFeQ5RhvxKKENVDQ7yhSqIKWqTjJ5BJKGBWFT_7CcTMOsqaKIuuRaD5AKET1tJFxbCBBhJdjjbL_kcPLYeu2n1RwPWsgEwUuNY1U5IKiMYzy9wcE39R5ZmteOOsVHbmmVigiXG4N83yZzbinoOD5VvA");'></div>
+</div>
+</header>
+<main class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 bg-background-light dark:bg-background-dark">
+<div class="rounded-lg bg-white dark:bg-black/20 overflow-hidden">
+<div class="h-40 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGVmgQvcm_RIUOhIkUSzqW40tJqd_foDwR8QNLxblyPqojaFMEkJ-GofU6tU5fCGjyEjm7K4D2BuEGgiNsbq7Iu7yIh5N3pEKl5gkxY4PpA9WMtgTlRO6-oqasQ13w8vOIQwFpF_WDF9joyBfIywsW7R-rC3IUtjlZ0buG4KtvRBWj9cym6tVcmo_jdk1s4Ww2uUJuTgyomq9d1OW3BzerNKt1o9HNVUBbeMsTnzvrZB7qymVnsOX9vHyn_d20uqQ4DUFXfM_4gT4");'></div>
+<div class="p-6 @container">
+<div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between">
+<div class="flex gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg min-h-32 w-32 -mt-16 border-4 border-background-light dark:border-background-dark" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKcuw3wWsrfxYBCrTkcK-S6B5hJLUSafhQn4jAB1xS9seyVyK2472GK9ufwcFG4whKzVmY1kbL9WAu5DaC49EOrj0fY11LdE5XhEehg8Wt0orinEZ1P2kbvTYwiNmN78wN0eu2OgJt_ngDgdikfhth34Ax_vxNMZe6B6MseiQf8ifyqpB0KhdZ8F5FWE1RzyUQel9dTa4SqFMxhkpXLFbX00Icgzp5Pxvb0A5Ad4-G6woLdp2AogwUvzG1upLqARAdG3K65Xn9Pik");'></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<p class="text-black dark:text-white text-2xl font-bold">Tech Innovators Inc.</p>
+<span class="material-symbols-outlined text-primary text-xl"> verified </span>
+</div>
+<p class="text-black/60 dark:text-white/60 text-base">Technology | 10,000+ employees | New York City</p>
+<p class="text-black/60 dark:text-white/60 text-base">100K followers</p>
+</div>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto">
+<span class="truncate">Add to Watchlist</span>
+</button>
+</div>
+</div>
+<div class="pb-3 px-6">
+<div class="flex border-b border-black/10 dark:border-white/10 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-black/60 dark:text-white/60 pb-3 pt-4" href="#">
+<p class="text-sm font-bold">About</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-black/60 dark:text-white/60 pb-3 pt-4" href="#">
+<p class="text-sm font-bold">Posts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-black dark:text-white pb-3 pt-4" href="#">
+<p class="text-sm font-bold">Jobs</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-black/60 dark:text-white/60 pb-3 pt-4" href="#">
+<p class="text-sm font-bold">People</p>
+</a>
+</div>
+</div>
+<div class="p-6">
+<h2 class="text-black dark:text-white text-xl font-bold pb-4">Posted Jobs</h2>
+<div class="flex flex-col gap-4">
+<div class="flex items-start justify-between gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark hover:bg-black/5 dark:hover:bg-white/5">
+<div class="flex flex-col gap-1">
+<p class="text-black dark:text-white text-lg font-bold">Senior Software Engineer</p>
+<p class="text-black/60 dark:text-white/60 text-sm">Tech Innovators Inc. • New York City • On-site</p>
+<p class="text-black/60 dark:text-white/60 text-sm">Posted 1 week ago</p>
+</div>
+<div class="hidden sm:block w-32 h-20 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBumyZVPNvkfHYxLpmZW2MWHH_lDLbaCw3ccK2KoW4qUYBm7p2HtETBoX6niSP7nanVhMHTM63JT62Wb3pE8-ckjBtNpUiTN_Bm3IggdbrbrIxkIczet1lq_ew7YWEeW4DGrt7c1EpzTsruz2-KNHOl3MXjZcPP-KToaR8QMdXIqmMa3pOLBEOcD4yxoLrcVH47dDba5ljJRf1izgHTS9MDEmplEpu8uLw4VWxzDIUqXj18421B6VF1WzznNbockxTpOjz8c38r0kE");'></div>
+</div>
+<div class="flex items-start justify-between gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark hover:bg-black/5 dark:hover:bg-white/5">
+<div class="flex flex-col gap-1">
+<p class="text-black dark:text-white text-lg font-bold">Product Manager</p>
+<p class="text-black/60 dark:text-white/60 text-sm">Tech Innovators Inc. • New York City • Hybrid</p>
+<p class="text-black/60 dark:text-white/60 text-sm">Posted 2 weeks ago</p>
+</div>
+<div class="hidden sm:block w-32 h-20 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8iKOEqEPZtfIeh5TrWbx6sjGPL3ut1RAHYvi10v0f1-NnPN2TX0g86L45RsxqUlP5ma61e1exn-0QqtszaSPkLsLy2GnVj94XWZTV_zTvtiPTo6dskDASZ0Mdfibq76tbnHuLWBR1JTt8N2poiAnfNQeKwDpDtt7JA0NGBDeCAzdwmwlinRUozKIZvYMoDXBKGi4RaJubWaVNVUjN_mmCPLvLUe-j7RNyD4vzxDlM2TUYRHXhYG__k7IlVBJpJMG9VJaupCuheUk");'></div>
+</div>
+<div class="flex items-start justify-between gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark hover:bg-black/5 dark:hover:bg-white/5">
+<div class="flex flex-col gap-1">
+<p class="text-black dark:text-white text-lg font-bold">UX/UI Designer</p>
+<p class="text-black/60 dark:text-white/60 text-sm">Tech Innovators Inc. • New York City • Remote</p>
+<p class="text-black/60 dark:text-white/60 text-sm">Posted 3 weeks ago</p>
+</div>
+<div class="hidden sm:block w-32 h-20 bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPnuUF79BXPf1jWJI4LCznlqnkEMff3-pzZUT8n_1gVeIpMVw-o9x1JsIxeZKWFIBHux8ZZK97CpEFD30rc7S-il1TcVsP2GFfNyTFZNc54BZbu42vL7utL_z3k8NUkNHqu7sWslsJFXNXekoarX_z4VM8qNT2jhQ8tNj4bCQ2SauxEB-SCIZmagXNHYyJccMjo37n1KczMpXR3o-28INi9ZB51f7Uj2ZgZNFr9JhSxpILMT7wAM7vtdf5QNxsS-zN_PPOFado2LA");'></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-5 rounded-lg bg-white dark:bg-black/20 overflow-hidden p-6">
+<h2 class="text-black dark:text-white text-xl font-bold pb-4">Analytics</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="flex flex-1 flex-col gap-2 rounded-lg p-4 bg-background-light dark:bg-background-dark">
+<p class="text-black/60 dark:text-white/60 text-base font-medium">Applications Received</p>
+<p class="text-black dark:text-white text-3xl font-bold">250</p>
+</div>
+<div class="flex flex-1 flex-col gap-2 rounded-lg p-4 bg-background-light dark:bg-background-dark">
+<p class="text-black/60 dark:text-white/60 text-base font-medium">Views on Job Posts</p>
+<p class="text-black dark:text-white text-3xl font-bold">1,500</p>
+</div>
+<div class="flex flex-1 flex-col gap-2 rounded-lg p-4 bg-background-light dark:bg-background-dark">
+<p class="text-black/60 dark:text-white/60 text-base font-medium">Average Time to Hire</p>
+<p class="text-black dark:text-white text-3xl font-bold">30 days</p>
+</div>
+</div>
+<div class="mt-4 rounded-lg bg-background-light dark:bg-background-dark p-6">
+<div class="flex items-start justify-between">
+<div>
+<p class="text-black/60 dark:text-white/60 text-base font-medium">Application Trends</p>
+<p class="text-black dark:text-white text-4xl font-bold">+15%</p>
+</div>
+<div class="text-right">
+<p class="text-black/60 dark:text-white/60 text-sm">Last 3 Months</p>
+<p class="text-green-500 text-sm font-medium">+15%</p>
+</div>
+</div>
+<div class="flex min-h-[180px] flex-1 flex-col gap-4 pt-4">
+<svg fill="none" height="148" preserveAspectRatio="none" viewBox="-3 0 478 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H326.769H0V109Z" fill="url(#paint0_linear_1131_5935)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#1193d4" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_1131_5935" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#1193d4" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="#1193d4" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="flex justify-around">
+<p class="text-black/60 dark:text-white/60 text-xs font-bold">Jan</p>
+<p class="text-black/60 dark:text-white/60 text-xs font-bold">Feb</p>
+<p class="text-black/60 dark:text-white/60 text-xs font-bold">Mar</p>
+<p class="text-black/60 dark:text-white/60 text-xs font-bold">Apr</p>
+<p class="text-black/60 dark:text-white/60 text-xs font-bold">May</p>
+<p class="text-black/60 dark:text-white/60 text-xs font-bold">Jun</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

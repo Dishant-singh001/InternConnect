@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Resume Builder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1193d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex h-screen">
+<aside class="w-64 bg-white/50 dark:bg-background-dark/50 p-6 flex flex-col justify-between border-r border-gray-200 dark:border-gray-700">
+<div>
+<div class="flex items-center gap-2 mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">
+                        description
+                    </span>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">ResumePro</h1>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">folder_open</span>
+<span class="font-medium">My Resumes</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">article</span>
+<span class="font-medium">Templates</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary font-bold" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-medium">AI Resume Builder</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Settings</span>
+</a>
+</nav>
+</div>
+<button class="w-full bg-primary text-white font-bold py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors">
+                New Resume
+            </button>
+</aside>
+<main class="flex-1 overflow-y-auto">
+<div class="p-8">
+<header class="mb-8">
+<h1 class="text-4xl font-bold text-gray-900 dark:text-white">AI Resume Builder</h1>
+<p class="text-gray-500 dark:text-gray-400 mt-2">Create a professional resume in minutes with our AI-powered builder.</p>
+</header>
+<section class="mb-8">
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Choose a Template</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden border-2 border-transparent group-hover:border-primary transition-all" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPLqh4Qczw6yMePEcdM0kkYWv9ULydw35xbYZB-jYgrRrGMCb_UjDyOMgNl5ezVan_FKLkorAW7o7FGHlsKmq489v2nLXAPgAFGDslSyLamPYRv9aD5vLQqxEQ5C_dIUGnXcCZWkYGa4DdvbAhPiRBy03ebkaVtYkJcd964H001qg96xcht6bPvZz_8tNRsHGFGgkzyxLJlnW5adGutwY3pq2fU7BemwlmtqL418BtKifirA6LYwe--6651vURCAo96h4QwkUwAXM");'>
+<div class="w-full h-full bg-black/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="text-white font-bold">Select</span>
+</div>
+</div>
+<p class="text-center mt-2 font-medium text-gray-800 dark:text-gray-300">Modern</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden border-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmckDFH13JhQ7uirC9WM9b1zK8m3rUvDW4oyr-wsVM3Ww6UWT2bENuRJLte3TDVRhwkUp6XUeeWtwqhfqgqnoBUjApmiO9BQzVGz_k8hZ06uGE0cP796yPwSgk0PVD9DghblnZDffCF0CPempSTTvvFA6ugvT8cNglRN95-Zb-D_CgnOnHpFJ_flEEXb8CwAYA92_mYhbagYjY1xek81OMwQ1xBMxdvG0lN-z7bzNiwc0kOL5Oul-wTaJpr_UdASsX8HX4bnh4Y5A");'>
+<div class="w-full h-full bg-primary/40 flex items-center justify-center">
+<span class="text-white font-bold">Selected</span>
+</div>
+</div>
+<p class="text-center mt-2 font-medium text-primary">Classic</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-cover bg-center rounded-xl overflow-hidden border-2 border-transparent group-hover:border-primary transition-all" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB88uqSQoqF5hz0YKQoNFniQZyaJKDIhoodVIeExsRmOdqlJbj546_KVSGbFdG3a3tEmouJjSv07t-VU2jhRTfTylPfDXClPrmqHF8wamvCj-gfTSS8-aV-WDX1s5aR3AxC6zHPsubQzMQtyFbuF8rGg10yQz4zp3kG4xGOTia6RRXM00AF0I9hXRkYtrwt0dFtcoCXHL4svi4E_38xLqVdB4j0LCpcif_kp9TiqIs2SDN4HAyrlnml9nLgoWxtXpVW3lqd5WP6xFs");'>
+<div class="w-full h-full bg-black/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="text-white font-bold">Select</span>
+</div>
+</div>
+<p class="text-center mt-2 font-medium text-gray-800 dark:text-gray-300">Creative</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Resume Sections</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 max-w-4xl">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="summary">Summary</label>
+<textarea class="form-textarea w-full rounded-lg bg-white/80 dark:bg-background-dark/60 border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary" id="summary" placeholder="e.g. A highly motivated software engineer..." rows="4"></textarea>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="experience">Experience</label>
+<textarea class="form-textarea w-full rounded-lg bg-white/80 dark:bg-background-dark/60 border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary" id="experience" placeholder="e.g. Software Engineer at Tech Corp..." rows="4"></textarea>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="education">Education</label>
+<input class="form-input w-full rounded-lg bg-white/80 dark:bg-background-dark/60 border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary" id="education" placeholder="e.g. B.S. in Computer Science..." type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="skills">Skills</label>
+<input class="form-input w-full rounded-lg bg-white/80 dark:bg-background-dark/60 border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary" id="skills" placeholder="e.g. JavaScript, React, Node.js..." type="text"/>
+</div>
+<div class="md:col-span-2">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="awards">Awards and Recognition</label>
+<input class="form-input w-full rounded-lg bg-white/80 dark:bg-background-dark/60 border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary" id="awards" placeholder="e.g. Employee of the Month..." type="text"/>
+</div>
+</div>
+</section>
+<section class="mt-10 border-t border-gray-200 dark:border-gray-700 pt-6">
+<div class="flex flex-col sm:flex-row gap-4 items-center">
+<div class="flex-1 w-full sm:w-auto">
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="job-application">Optimize for Job Application</label>
+<select class="form-select w-full rounded-lg bg-white/80 dark:bg-background-dark/60 border-gray-300 dark:border-gray-600 focus:ring-primary focus:border-primary" id="job-application">
+<option>Select Job Application</option>
+<option>Software Engineer at Google</option>
+<option>Frontend Developer at Facebook</option>
+</select>
+</div>
+<div class="flex gap-4 self-end pt-5">
+<button class="bg-primary/20 dark:bg-primary/30 text-primary font-bold py-2 px-6 rounded-lg hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+                                Optimize
+                            </button>
+<button class="bg-primary text-white font-bold py-2 px-6 rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                                Download PDF
+                            </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>
